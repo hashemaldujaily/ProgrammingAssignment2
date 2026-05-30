@@ -38,5 +38,5 @@ cacheSolve <- function(x, ...) {
         ## makeCacheMatrix(m)
         ## cacheSolve(makeCacheMatrix(m)) should return the inverse matrix which is:
         ##     [,1] [,2]
-## [1,]   -2  1.5
-        ## [2,]    1 -0.5
+        ## [1,] -2  1.5
+        ## [2,]  1 -0.5
