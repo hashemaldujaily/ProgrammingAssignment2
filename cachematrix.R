@@ -32,11 +32,14 @@ cacheSolve <- function(x, ...) {
         matrixinverse <- solve(data, ...)
         x$setinverse(matrixinverse)
                         matrixinverse
-        
+        }
         ## Return a matrix that is the inverse of 'x'
-        ## Example: m <- matrix(c(1,2,3,4), nrow = 2)
-        ## makeCacheMatrix(m)
-        ## cacheSolve(makeCacheMatrix(m)) should return the inverse matrix which is:
+        ## I chose a 2x2 matrix with data of "1, 2, 3, 4". 
+        ## This Should return the following result:
         ##     [,1] [,2]
         ## [1,] -2  1.5
         ## [2,]  1 -0.5
+        m <- matrix(c(1,2,3,4), nrow = 2)
+        makeCacheMatrix(m)
+        cacheSolve(makeCacheMatrix(m))
+        
